@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Tutorial</title>
+</head>
+<body>
+    <script>
+        function start(){
+            console.log("starting...");
+        }
+        function Process(){
+            setTimeout(function(){
+                console.log("Processing...");
+            },1000)
+           
+        }
+        function end(){
+            console.log("ending...");
+        }
+           start();
+           Process();
+           end();
+
+           let  myJson={
+              name:"jalal",
+              age:25,
+              skill:["html","css","javascript"],
+              friends:[
+                {name:"ismail",web:"www.ismail.com"},
+                {name:"asif",web:"www.asif.com"},
+                {name:"mohim",web:"www.mohim.com"},
+              ]
+           };
+           console.log(myJson);
+           console.log(myJson.name);
+           console.log(myJson.age);
+           console.log(myJson.skill[2]);
+           console.log(myJson.friends[1].web);
+  
+    </script>
+    
+</body>
+</html>

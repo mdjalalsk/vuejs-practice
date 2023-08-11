@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start useing vue js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+        <h2>Current Time: {{ getCurrentTime()}}</h2>
+        <p>{{5+5}}</p>
+        <h1 style="text-align: center; color:greenyellow;">Counter: {{counter}}</h1>
+        <div style="text-align: center; margin: 20px;">
+            <button style=" color: blue; margin-right: 10px;" @click="increase(1)">Increment1</button>
+            <button style="color: red;" @click="decrease(1)">Decrement1</button>
+
+        </div>
+        <div style="text-align: center; margin: 20px;">
+            <button style=" color: blue; margin-right: 10px;" @click="increase(5)">Increment5</button>
+            <button style="color: red;" @click="decrease(5)">Decrement5</button>
+
+        </div>
+        <div style="text-align: center; margin: 20px;">
+            <button style=" color: blue; margin-right: 10px;" @click="increase(10)">Increment10</button>
+            <button style="color: red;" @click="decrease(10)">Decrement10</button>
+
+        </div>
+          <div style="text-align: center;">
+            <button style="margin: 15px; background-color: cadetblue; color: gold;" @click="testEvent">Test</button> <!--tesEvent function/method ta ai vaba call korle  event sob gulo property pabe -->
+            <button style="margin: 15px; background-color: cadetblue; color: gold;" @click="testEvent()">Test</button><!--method/function a parameter na dela undefind pabe -->
+            <button style="margin: 15px; background-color: cadetblue; color: gold;" @click="testEvent($event)">Test</button><!--method/function a parameter dela event sob gulo property pabe -->
+          </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

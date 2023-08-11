@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start  useing vue js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div style="text-align: center;">
+            <h1>{{msg}}</h1>
+         
+            <label>Enter Your Name :</label>
+           <!-- <input :value="number" type="text" @input="handelInut">--><!-- first system for tow ways data binding-->
+            <input v-model.number="number" type="text"> <!-- another  system for tow ways data binding .it is build in vue js two ways data binding-->
+            <br>
+            <button style="margin: 20px;" @click="getDouble">Get Double</button>
+            <button style="margin: 20px;" @click="getsqure">Get Square</button>
+            <button style="margin: 20px;" @click="addten">Add 10 </button>
+            <button style="margin: 20px;" @click="reset">Reset </button>
+            <hr>
+            <label>Enter number : {{number}}</label>
+            <br>
+            <label>result: {{result}}</label>
+
+ 
+        
+        </div>
+         
+
+       </div>
+   <script src="app.js"></script>
+</body>
+</html>

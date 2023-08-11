@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start  useing vue js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h1>test  Vue js</h1>
+    <div id="app">
+        <h1>My name is {{myInfo.Name}} </h1>
+
+        <h1>This is  my <a :href="myInfo.GitHubLink"> Github link</a>
+        <h1>This is  my <a  v-bind:href="myInfo.GitHubLink"> Github link</a>
+            <!-- note:-  v-bind: er poribotta : use korte  pari -->
+        </h1>
+
+    </div>
+   
+   <script src="app.js"></script>
+</body>
+</html>
